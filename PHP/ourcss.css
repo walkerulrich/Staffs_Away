@@ -1,0 +1,612 @@
+body {
+    font-family: Arial, sans-serif; /* Police par défaut pour tout le document */
+  }
+  
+  
+  /* Styles de la barre de navigation */
+  .navbar {
+    background-color: #001d3d; /* Couleur de fond de la barre de navigation */
+    color: #ffc300; /* Couleur du texte dans la barre de navigation */
+    padding: 10px 0; /* Espacement intérieur de la barre de navigation */
+    position: fixed; /* Fixer la barre de navigation */
+    top: 0; /* Positionner la barre en haut de la fenêtre */
+    width: 100%; /* Largeur de la barre sur toute la largeur de la fenêtre */
+    z-index: 1000; /* Assurer que la barre est au-dessus de tout autre contenu */
+  }
+  /*-----------------------------------*/
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .container{
+    width: 100%;
+  }
+
+  /*----------------------------*/
+
+  .logo {
+    width: 120px; /* Largeur du logo */
+    height: auto; /* Maintenir le rapport hauteur/largeur */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #EBEBEB;
+    font-family: 'Times New Roman', Times, serif, sans-serif; /* Utilisation de la police Arial */
+  }
+  
+  
+  /* Changement de couleur de lien au survol */
+  .nav-links li a:hover {
+    color: #ffc300; /* Couleur des liens au survol */
+  }
+  
+  /* Style pour le cadre autour de "Sign In" */
+  #sign-in {
+    border: 2px solid #ffc300; /* Bordure de 2px solide en orange */
+    padding: 3px 10px; /* Espacement interne */
+    border-radius: 5px; /* Coins arrondis */
+  }
+  
+  /* Styles généraux */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .section {
+    background-image: url('../image/tangi-bertin-zjKWgzXE_OU-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #EBEBEB;
+    padding: 50px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Pour aligner les éléments en haut */
+  }
+  
+  .content {
+    padding: 0 50px;
+    margin-top: 50px;
+    width: calc(100% - 400px); /* Pour laisser de l'espace au formulaire */
+  }
+  #titre{
+    font-size: 50px;
+  }
+  h1 {
+    margin-bottom: 20px;
+    
+  }
+  
+  /* Styles des boutons de catégorie */
+  .category-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Pour aligner les boutons à gauche */
+  }
+  
+  .category-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #001d3d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .category-button.active {
+    background-color: #ccc;
+  }
+  
+  /* Styles des formulaires */
+  .form-container {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    margin-right: 20px;
+    align-self: flex-end; /* Pour aligner le formulaire en bas */
+  }
+  
+  .booking-form, .rental-form {
+    display: none;
+  }
+  
+  .booking-form.show, .rental-form.show {
+    display: block;
+  }
+  
+  .booking-form, .rental-form {
+    width: 100%;
+    padding: 20px;
+    background-color: #001d3d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ccc;
+  }
+  
+  .booking-form h2, .rental-form h2 {
+    color: #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .booking-form label, .rental-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #CCC;
+  }
+  
+  .booking-form input[type="text"], .booking-form input[type="date"], .booking-form input[type="number"], .booking-form select, .rental-form input[type="text"], .rental-form input[type="date"], .rental-form input[type="number"], .rental-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #ccc;
+    color: #000000;
+  }
+  
+  .booking-form input[type="checkbox"], .rental-form input[type="checkbox"] {
+    margin-right: 5px;
+    appearance: none;
+  }
+  
+  .booking-form input[type="checkbox"]::before, .rental-form input[type="checkbox"]::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    background-color: #001d3d;
+  }
+  
+  .booking-form input[type="checkbox"]:checked::before, .rental-form input[type="checkbox"]:checked::before {
+    content: "\2713";
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+  }
+  
+  .booking-form button, .rental-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffc300;
+    color: #001d3d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .booking-form button:hover, .rental-form button:hover {
+    background-color: #987608;
+  }
+  
+  .booking-form .row, .rental-form .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .booking-form .col, .rental-form .col {
+    flex: 1;
+    margin-right: 15px;
+  }
+  
+  .booking-form .col:last-child, .rental-form .col:last-child {
+    margin-right: 0;
+  }
+  
+  .booking-form select#class, .rental-form select#class {
+    background-color: #ccc;
+    color: #000000;
+    border: 1px solid #ccc;
+  }
+  
+  .passenger-select {
+    position: relative;
+  }
+  
+  .passenger-select input {
+    width: calc(100% - 50px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .passenger-select .arrow-up, .passenger-select .arrow-down {
+    position: absolute;
+    top: 25%;
+    transform: translateY(-10%);
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    cursor: pointer;
+  }
+  
+  .passenger-select .arrow-up {
+    border-bottom-color: #001d3d;
+    border-top: none;
+    left: calc(100% - 20px);
+  }
+  
+  .passenger-select .arrow-down {
+    border-top-color: #001d3d;
+    border-bottom: none;
+    left: calc(100% - 35px);
+  }
+  
+  
+  
+  .features {
+    text-align: center;
+    padding: 50px 20px; /* Padding added for horizontal spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Left-side shadow */
+  }
+  
+  .features h2 {  /* Targets "FEATURES" */
+    font-size: 18px; /* Smaller font size */
+    font-weight: bold;
+    text-transform: uppercase; /* Make uppercase */
+    margin-bottom: 40px;
+    text-align: center;
+    color: #FFC300;
+  }
+  
+  .features h3 {  /* Targets "Top Features" */
+    font-size: 35px; /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #001d3d;
+  }
+  
+  .features p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusts column width */
+    gap: 20px;
+    /* Add horizontal padding to the container */
+    padding: 20px; /* Adjust padding as needed */
+  }
+  
+  .feature {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: space-between; /* Distribute elements vertically */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .feature img {
+    width: 80px; /* Adjust image width as needed */
+    height: auto;
+  }
+  
+  .feature h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    line-height: 1.5;
+  }
+  
+  
+  .about-us {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .about-us .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-us .left-content {
+    width: 50%;
+  }
+  
+  .about-us .right-content {
+    width: 50%;
+    text-align: left; /* Aligner le contenu du côté droit à gauche */
+  }
+  
+  .about-us h2 {
+    font-size: 1.8rem;
+    color: #FFC300;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .about-us h1 {
+    font-size: 3rem;
+    color: #001d3d;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    font-size: 1.2rem;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .about-us button {
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    background-color: #ffc300;
+    color: #001d3d;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .about-us button:hover {
+    background-color: #FFC300;
+    transform: translateY(-2px);
+  }
+  .image-container {
+    width: 500px; /* Largeur souhaitée pour l'image */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+    margin: 0 auto; /* Centrer l'image horizontalement */
+    overflow: hidden; /* Cacher tout débordement de l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajouter une ombre pour effet de profondeur */
+    border-radius: 10px; /* Coins arrondis */
+  }
+  
+  .image-container img {
+    display: block; /* Assurer un espace vide autour de l'image */
+    width: 100%; /* Occuper toute la largeur du conteneur */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+  }
+  .services {
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Ombre côté gauche */
+  }
+  
+  .services h2 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #FFC300;
+  }
+  
+  .services h3 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #001d3d;
+  }
+  
+  .services p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three services per line */
+    gap: 20px;
+    padding: 20px; /* Padding horizontal for the service containers */
+  }
+  
+  .service {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left; /* Aligner le contenu du service à gauche */
+  }
+  
+  .service img {
+    width: 80px;
+    height: auto;
+  }
+  
+  .service h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    line-height: 1.5;
+  }
+  
+  .statistics {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0; /* Ajuster le padding selon vos préférences */
+    background-image: url('../image/jet.jpg'); /* Ajouter votre image de fond */
+    background-size: cover; /* Redimensionne l'image pour couvrir toute la section */
+    background-position: center; /* Centre l'image de fond */
+  }
+  
+  .statistic {
+    text-align: center;
+  }
+  
+  .number {
+    font-size: 58px; /* Taille du chiffre */
+    font-weight: bold;
+    color: #fff; /* Couleur du chiffre */
+  }
+  
+  .text {
+    font-size: 24px; /* Taille du texte */
+    color: #FFC300; /* Couleur du texte */
+    margin-top: 10px; /* Espacement entre le chiffre et le texte */
+  }
+  
+  .footer {
+    background-color: #ccc;
+    color: #001d3d;
+    padding: 2px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+  }
+  
+  .footer-section.about {
+    max-width: 300px; /* Limit the width of the about section */
+  }
+  
+  .footer-section.about img {
+    width: 100px; /* Adjust image size */
+    margin-bottom: 0px; /* Add some space below the image */
+  }
+  
+  .footer-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 0px;
+  }
+  
+  .contact span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .social a {
+    color: #001d3d;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  .social a:hover {
+    color: #FFC300; /* Change color on hover */
+  }
+  
+  .links {
+    text-align: left; /* Centrer le contenu */
+    margin-left: 20%;
+  }
+  
+  .links h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Supprimer les marges par défaut */
+  }
+  
+  .links li {
+    margin-bottom: 10px;
+  }
+  
+  .links a {
+    color: #001d3d;
+    transition: color 0.3s ease; /* Transition de couleur douce au survol */
+  }
+  
+  .links a:hover {
+    color: #FFC300; /* Changer la couleur au survol */
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #001d3d;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #001d3d;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #001d3d; /* Placeholder text color */
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFC300;
+    color: #001d3d;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+  }
+  
+  .contact-form button:hover {
+    background-color: #FFD54F; /* Change background color on hover */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    position: relative; /* Ajouter une position relative */
+  }
+  
+  .footer-bottom::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%; /* Aligner le trait au centre */
+    transform: translateX(-50%); /* Déplacer le trait de moitié vers la gauche */
+    width: 100%; /* Largeur du trait */
+    height: 1px; /* Épaisseur du trait */
+    background-color: #001d3d; /* Couleur du trait */
+    background-image: linear-gradient(to right, #001d3d 50%, transparent 50%); /* Créer un trait en pointillé */
+  }
+  

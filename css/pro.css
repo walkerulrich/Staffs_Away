@@ -1,0 +1,242 @@
+section {
+    font-family: Arial, sans-serif;
+    background-color: #001d3d;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h3 {
+    text-align: center;
+    color: red;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.register-link {
+    text-align: center;
+    color: #001d3d;
+}
+
+.form-container {
+    width: 33%;
+    max-width: 60%;
+    background-color: #fff;
+    padding: 30px;
+    padding-top: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: xx-large;
+    color: #001d3d;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-group label {
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #ffc107;
+    color: #001d3d;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: large;
+    margin-top: 5px; /* Adjust margin for proper alignment */
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ffca28;
+}
+
+.log {
+    text-decoration: none;
+    color: #001d3d;
+}
+
+.yess {
+    color: green;
+}
+
+.navbar {
+    background-color: #001d3d;
+    color: #ffc300;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #EBEBEB;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+.nav-links li a:hover {
+    color: #ffc300;
+}
+
+#sign-in {
+    border: 2px solid #ffc300;
+    padding: 0.15px 10px;
+    border-radius: 5px;
+}
+.footer {
+  background-color: #001d3d;
+  color: #ccc; /* Changer la couleur du texte en #ccc */
+  padding: 50px 0;
+  text-align: left; /* Aligner le texte à gauche */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px; /* Ajout de marges à droite et à gauche */
+}
+
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section.about {
+  max-width: 300px;
+}
+
+.footer-section.about img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.footer-section h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.links {
+  text-align: center; /* Centrer les liens */
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links li {
+  margin-bottom: 10px;
+}
+
+.links a {
+  color: #ccc; /* Changer la couleur des liens en #ccc */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ccc; /* Changer la couleur du texte en #ccc */
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #FFC300;
+  color: #001d3d;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer-bottom::before {
+  content: '';
+  display: block;
+  margin: 10px auto;
+  width: 50%;
+  height: 1px;
+  background-color: #fff;
+  margin-bottom: 20px; /* Ajout de marge en bas */
+}

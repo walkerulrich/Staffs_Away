@@ -1,0 +1,150 @@
+.corps {
+    color: #001d3d;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+}
+.head {
+    display: flex;
+    align-items: flex-start;
+    /* Pour aligner les éléments en haut */
+    padding: 50px;
+    margin-top: 86px;
+}
+.button {
+    border: none;
+    /* suppression de la bordure */
+    color: #001d3d;
+    /* couleur du texte */
+    padding: 15px 32px;
+    /* espacement intérieur (haut/bas) et (gauche/droite) */
+    text-align: center;
+    /* alignement du texte */
+    text-decoration: none;
+    /* suppression du soulignement */
+    font-size: 16px;
+    /* taille de police */
+    cursor: pointer;
+    /* curseur */
+    height: 60px;
+}
+.button:hover,
+.button.clicked {
+    background-color: #001d3d;
+    color: white;
+}
+
+
+.management {
+    margin-top: 0px;
+}
+.bookingTable {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+.bookingTable th,
+.bookingTable td {
+    border: 1px solid #dddddd;
+    text-align: left;
+
+}
+
+.bookingTable th {
+    background-color: #f2f2f2;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+
+
+
+
+.search-container {
+    display: flex;
+    /* Utilisez Flexbox pour aligner les éléments horizontalement */
+    align-items: center;
+    /* Centrez verticalement les éléments dans le conteneur */
+    width: 400px;
+    /* Définissez une largeur fixe pour le conteneur de recherche */
+    position: relative;
+    /* Position relative pour permettre le positionnement absolu de l'icône */
+    width: 25%;
+    margin-left: 2%;
+
+
+}
+
+#searchColumn, #searchBookings, #searchRentBook {
+    height: 33px;
+}
+
+#searchInput {
+    flex: 1;
+    /* Le champ de saisie occupe tout l'espace disponible */
+    padding-right: 30px;
+    /* Ajoutez un padding à droite pour laisser de la place à l'icône */
+    height: 30px;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.search-icon {
+    font-size: 16px;
+    /* Taille de la police de l'icône */
+    position: absolute;
+    /* Position absolue pour placer l'icône par rapport au conteneur de recherche */
+    
+    /* Placez l'icône à droite du champ de saisie */
+    cursor: pointer;
+    /* Curseur pointer pour indiquer que l'icône est cliquable */
+    z-index: 1;
+    /* Assurez-vous que l'icône est au-dessus du champ de saisie */
+}
+
+
+
+
+#search-icon_flights{
+    left: 140px;
+}
+#search-icon_bookings{
+    left: 160px;
+}
+#search-iconRtenBook{
+    left: 138px;
+}
+
+
+
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    /* Pour centrer horizontalement */
+    align-items: center;
+    /* Pour centrer verticalement */
+    text-align: center;
+    /* Pour centrer le texte à l'intérieur */
+    margin-bottom: 20px;
+}

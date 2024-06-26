@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Style de la barre de navigation */
+.navbar {
+    background-color: #001d3d;
+    color: #ffc300;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .logo {
+    width: 120px;
+    height: auto;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+
+  .nav-links li {
+    margin-right: 20px;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    color: #EBEBEB;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .nav-links li a:hover {
+    color: #ffc300;
+  }
+
+  #sign-in {
+    border: 2px solid #ffc300;
+    padding: 0.15px 10px;
+    border-radius: 5px;
+  }
+
+  /* Style du formulaire de paiement */
+.pay{
+    margin-top: 150px;
+  }
+  form {
+    margin-top: 50px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #666;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="month"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  input[type="month"]:focus {
+    outline: none;
+    border-color: #001d3d;
+    box-shadow: 0 0 5px rgba(0, 29, 61, 0.3);
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffc300;
+    color: #001d3d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #987608;
+  }

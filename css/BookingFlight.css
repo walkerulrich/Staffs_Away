@@ -1,0 +1,362 @@
+header, body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+    background-color: #001d3d; /* Couleur de fond de la barre de navigation */
+    color: #ffc300; /* Couleur du texte dans la barre de navigation */
+    padding: 10px 0; /* Espacement intérieur de la barre de navigation */
+    position: fixed; /* Fixer la barre de navigation */
+    top: 0; /* Positionner la barre en haut de la fenêtre */
+    width: 100%; /* Largeur de la barre sur toute la largeur de la fenêtre */
+    z-index: 1000; /* Assurer que la barre est au-dessus de tout autre contenu */
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .logo {
+    width: 120px; /* Largeur du logo */
+    height: auto; /* Maintenir le rapport hauteur/largeur */
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+
+  .nav-links li {
+    margin-right: 20px;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    color: #EBEBEB;
+    font-family: 'Times New Roman', Times, serif, sans-serif; /* Utilisation de la police Arial */
+  }
+  /* Changement de couleur de lien au survol */
+  .nav-links li a:hover {
+    color: #ffc300; /* Couleur des liens au survol */
+  }
+  /* Style pour le cadre autour de "Sign In" */
+  #sign-in {
+    border: 2px solid #ffc300; /* Bordure de 2px solide en orange */
+    padding: 0.15px 10px; /* Espacement interne */
+    border-radius: 5px; /* Coins arrondis */
+  }
+
+
+
+
+
+.container1 {
+  width: 100%;
+  min-height: 100vh;
+
+
+}
+
+.price-col h3 {
+  margin: 0% 0 2% 20%;
+  font-size: 24px;
+  color: #987608;
+
+}
+
+.price-row {
+  width: 81%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.price-col {
+  transition: box-shadow .5s;
+  transition: transform;
+  background: #f9f9f9;
+  padding: 10% 10%;
+  border-radius: 10px;
+  color: #D8D9DA;
+  text-align: center;
+  border: solid 1px #001d3d;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+  padding: -10% !important;
+}
+
+
+
+.price-col p {
+  font-size: 22px;
+  color: #987608;
+}
+
+.price-col h3 {
+  color: #001d3d;
+  font-size: 44px;
+  margin: 15px 0 20px;
+  font-weight: 500;
+}
+.price-col ul {
+  text-align: left;
+  margin: 10px 0;
+  color: #0C356A;
+  list-style: none;
+}
+
+.price-col ul li {
+  border-bottom: 2px solid #feffff;
+  font-size: 20px;
+  color: #001d3d;
+  padding: 8px;
+  text-align: left;
+}
+
+
+.sel {
+  color: #feffff;
+  background-color: #001d3d;
+  width: 100px;
+  height: 5px;
+  border: 2px solid #001d3d;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 20px;
+  }
+.price-col {
+  position: relative;
+}
+
+.price-col .sel {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.checked-bag:before {
+  content: "\2713"; /* Caractère Unicode pour une coche */
+  color: green; /* Couleur verte */
+  margin-right: 5px;
+}
+
+.carry-on:before {
+  content: "\00D7"; /* Caractère Unicode pour une croix (multiplication) */
+  color: red; /* Couleur rouge */
+  margin-right: 5px;
+
+}
+
+.front-cabin-seats:before,
+.refundable:before,
+.lounge-access:before,
+.sky-priority:before {
+  content: "";
+  margin-right: 5px;
+}
+
+.insurance-section {
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.insurance-section h3 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.insurance-section table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-left: 10%;
+}
+
+.insurance-section th {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #dddddd;
+}
+
+.insurance-section td {
+  padding: 10px;
+  border: 1px solid #dddddd;
+}
+
+.insurance-section input[type='radio'] {
+  margin-right: 5px;
+}
+
+.insurance-section tr:first-child {
+  font-weight: bold;
+}
+
+.insurance-section tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+.insurance-section table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-left: 10%; /* Marge à gauche pour l'image */
+}
+
+.insurance-section img {
+  float: left; /* Flotter l'image à gauche */
+  margin-right: 10px; /* Espacement entre l'image et le texte */
+  height: 60px;
+  width: 60px;
+}
+.insurance-section tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.insurance-section tr:hover {
+  background-color: #f2f2f2;
+}
+
+.Passenger-Details {
+  margin-top: 20px;
+}
+
+.Passenger-Details h1 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 20px;
+
+}
+
+.passenger-info {
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre légère */
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.passenger-info h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #001d3d; /* Couleur plus foncée pour les titres */
+}
+
+.passenger-info label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333333; /* Couleur plus sombre pour les labels */
+}
+
+.passenger-info input[type="email"],
+.passenger-info input[type="text"],
+.passenger-info input[type="number"],
+.passenger-info input[type="tel"] {
+  width: 100%; /* Largeur maximale pour les champs de saisie */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+
+  box-sizing: border-box;
+}
+
+.passenger-info input[type="email"]:focus,
+.passenger-info input[type="text"]:focus,
+.passenger-info input[type="number"]:focus,
+.passenger-info input[type="tel"]:focus {
+  outline: none;
+  border-color: #001d3d;
+  box-shadow: 0 0 5px rgba(0, 29, 61, 0.3);
+}
+
+#validate {
+  width: 30%;
+  padding: 12px;
+  background-color: #ffc300;
+  color: #001d3d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right; /* Aligner le bouton à droite */
+  clear: both; /* Clear floating */
+}
+
+#validate:hover {
+  background-color: #987608;
+}
+
+.flight-details {
+  margin-top: 150px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.flight-details h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.flight-details p {
+  margin-bottom: 10px;
+  line-height: 1.3;
+  color: #666;
+  font-size: 14px; /* Définir une taille de police spécifique */
+}
+
+
+
+
+footer {
+  background-color: #001d3d; /* Dark blue background */
+  color: #ccc; /* Light gray text */
+  padding: 20px;
+  text-align: center; /* Or left-align if preferred */
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Distributes content evenly */
+}
+
+.contact, .security {
+  width: 45%; /* Adjust width as needed */
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: inherit; /* Inherit text color from footer */
+}
+
+p {
+  margin-bottom: 5px;
+  color: inherit; /* Inherit text color from footer */
+}
+
+a {
+  color: #fff; /* White color for links */
+  text-decoration: none; /* Removes underline from links */
+}

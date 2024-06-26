@@ -1,0 +1,356 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Styles de la barre de navigation */
+.navbar {
+    background-color: #001d3d; /* Couleur de fond de la barre de navigation */
+    color: #ffc300; /* Couleur du texte dans la barre de navigation */
+    padding: 10px 0; /* Espacement intérieur de la barre de navigation */
+    position: fixed; /* Fixer la barre de navigation */
+    top: 0; /* Positionner la barre en haut de la fenêtre */
+    width: 100%; /* Largeur de la barre sur toute la largeur de la fenêtre */
+    z-index: 1000; /* Assurer que la barre est au-dessus de tout autre contenu */
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .logo {
+    width: 120px; /* Largeur du logo */
+    height: auto; /* Maintenir le rapport hauteur/largeur */
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+
+  .nav-links li {
+    margin-right: 20px;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    color: #EBEBEB;
+    font-family: 'Times New Roman', Times, serif, sans-serif; /* Utilisation de la police Arial */
+  }
+
+
+  /* Changement de couleur de lien au survol */
+  .nav-links li a:hover {
+    color: #ffc300; /* Couleur des liens au survol */
+  }
+
+  /* Style pour le cadre autour de "Sign In" */
+  #sign-in {
+    border: 2px solid #ffc300; /* Bordure de 2px solide en orange */
+    padding: 0.25px 10px; /* Espacement interne */
+    border-radius: 5px; /* Coins arrondis */
+  }
+  section {
+    padding: 100px;
+    margin-top: 50px; /* Espacement par rapport à la barre de navigation */
+    background-color: #f5f5f5; /* Couleur de fond */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+h1 {
+    color: #001d3d; /* Couleur de titre */
+    font-size: 24px; /* Taille de police */
+    margin-bottom: 20px; /* Espacement en bas */
+}
+
+p {
+    color: #555; /* Couleur de texte */
+    font-size: 16px; /* Taille de police */
+    line-height: 1.6; /* Hauteur de ligne */
+    margin-bottom: 20px; /* Espacement en bas */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Espacement en bas */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Bordure basse */
+}
+
+th {
+    background-color: #001d3d; /* Couleur de fond de l'en-tête */
+    color: #fff; /* Couleur de texte de l'en-tête */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Couleur de fond des lignes paires */
+}
+
+tr:hover {
+    background-color: #ddd; /* Couleur de fond au survol */
+}
+
+
+#validate {
+    width: 20%;
+    padding: 10px;
+    background-color: #ffc300;
+    color: #001d3d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right; /* Aligner le bouton à droite */
+    margin-top: 10px; /* Espacement par rapport au contenu précédent */
+}
+
+#validate:hover {
+    background-color: #987608;
+}
+
+
+.flight-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.flight {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1.5px solid #001d3d;
+  padding: 10px;
+  border-radius: 30px  0 30px 0; /* Coins arrondis en haut */
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+}
+
+.airline-info {
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.departure-info,
+.arrival-info {
+  flex: 1;
+}
+
+.duration-info {
+  flex: 1;
+  text-align: left;
+  position: relative;
+  margin-bottom: 10spx;
+}
+
+.stopover-info-btn {
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 20px;
+}
+
+.stopover-info-box {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+.date {
+  font-weight: bold;
+}
+
+.airport {
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+.time {
+  font-style: italic;
+}
+
+#departure-date,#departure-time,#departure-airport{
+  text-align: right;
+}
+
+.vertical-line {
+  border-left: 1px solid #ccc; /* Couleur et épaisseur de la ligne */
+  height: 100px; /* Hauteur de la ligne (ajustez selon vos besoins) */
+  margin: 0 10px; /* Marge autour de la ligne (ajustez selon vos besoins) */
+}
+
+.infos {
+  display: absolute;
+  top: -10px;
+
+}
+
+.line {
+
+  height: 1px;
+  background-color: gray;
+  width: 200px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.price-and-select {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-info {
+  display: flex; /* Utiliser Flexbox pour aligner le contenu */
+  flex: 1;
+  justify-content: center; /* Centrer horizontalement le contenu */
+  align-items: center; /* Centrer verticalement le contenu */
+  text-align: center; /* Centrer le texte horizontalement */
+  width: 80px;
+  height: 50px;
+  margin-bottom: 10px;
+  background-color: #f0f0f0;
+  border: 2px solid #001d3d;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #001d3d;
+}
+
+#sel{
+  color: #ccc;
+  background-color: #001d3d;
+  width: 100px;
+  height: 10px;
+  border: 2px solid #001d3d;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+#sel .selected {
+  color: #ffc300;}
+  .select-btn {
+    color: #ccc;
+    background-color: #001d3d;
+    width: 100px;
+    height: 20px;
+    border: 2px solid #001d3d;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .select-btn.selected {
+    color: #ffc300; /* Couleur du texte lorsque sélectionné */
+  }
+
+/* CSS */
+.stopover-info-box {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.info-btn {
+  cursor: pointer;
+  background-color: #ccc;
+  color: #001d3d;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.info-btn:hover {
+  background-color: #ccc;
+}
+.tiny-icon {
+  width: 16px; /* Ajustez la largeur selon vos besoins */
+  height: 16px; /* Ajustez la hauteur selon vos besoins */
+
+}
+footer {
+  background-color: #001d3d; /* Dark blue background */
+  color: #ccc; /* Light gray text */
+  padding: 20px;
+  text-align: center; /* Or left-align if preferred */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Distributes content evenly */
+}
+
+.contact, .security {
+  width: 45%; /* Adjust width as needed */
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: inherit; /* Inherit text color from footer */
+}
+
+p {
+  margin-bottom: 5px;
+  color: inherit; /* Inherit text color from footer */
+}
+
+a {
+  color: #fff; /* White color for links */
+  text-decoration: none; /* Removes underline from links */
+}
